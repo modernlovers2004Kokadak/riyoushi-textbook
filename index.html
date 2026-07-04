@@ -7,7 +7,7 @@
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--text:#222;--muted:#666;--line:#e6e8ef;--accent:#1f6feb;}
 *{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;}
-header{padding:28px 18px 14px;text-align:center;} h1{font-size:1.55rem;margin:.2rem 0 .4rem;} p{margin:.2rem 0;color:var(--muted);} main{max-width:760px;margin:0 auto;padding:14px 16px 36px;} .grid{display:grid;gap:14px;} a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(0,0,0,.04);} a.card:hover{border-color:var(--accent);transform:translateY(-1px);} .title{font-size:1.15rem;font-weight:700;margin-bottom:4px;} .desc{font-size:.95rem;color:var(--muted);} footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 30px;}
+header{padding:28px 18px 14px;text-align:center;} h1{font-size:1.55rem;margin:.2rem 0 .4rem;} p{margin:.2rem 0;color:var(--muted);} main{max-width:760px;margin:0 auto;padding:14px 16px 36px;} .grid{display:grid;gap:14px;} details.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0;box-shadow:0 4px 14px rgba(0,0,0,.04);} details.card summary{cursor:pointer;list-style:none;padding:18px;} details.card summary::-webkit-details-marker{display:none} .sub{padding:0 18px 18px;display:grid;gap:10px}.sub a{display:block;border:1px solid var(--line);border-radius:14px;padding:10px 12px;text-decoration:none;color:inherit;background:#fafafa} .sub a.home{background:#fff;font-weight:700} a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-decoration:none;color:inherit;box-shadow:0 4px 14px rgba(0,0,0,.04);} a.card:hover{border-color:var(--accent);transform:translateY(-1px);} .title{font-size:1.15rem;font-weight:700;margin-bottom:4px;} .desc{font-size:.95rem;color:var(--muted);} footer{text-align:center;color:var(--muted);font-size:.85rem;padding:10px 16px 30px;}
 </style>
 </head>
 <body>
@@ -16,8 +16,8 @@ header{padding:28px 18px 14px;text-align:center;} h1{font-size:1.55rem;margin:.2
 <p>各教材を選択してください。</p>
 </header>
 <main><div class="grid">
-<a class="card" href="過去問第１弾/index.html"><div class="title">過去問第１弾</div><div class="desc">過去問テーマ別オリジナル問題集</div></a>
-<a class="card" href="過去問第２弾/index.html"><div class="title">過去問第２弾</div><div class="desc">重複を避けた追加問題集</div></a>
+<details class="card"><summary><div class="title">過去問第１弾</div><div class="desc">開いて章を選択できます。</div></summary><div class="sub"><a class="home" href="過去問第１弾/index.html">章一覧を開く</a><a href="過去問第１弾/chapter1.html">第１章　関係法規</a><a href="過去問第１弾/chapter2.html">第２章　衛生管理</a><a href="過去問第１弾/chapter3.html">第３章　保健</a><a href="過去問第１弾/chapter4.html">第４章　香粧品化学</a><a href="過去問第１弾/chapter5.html">第５章　文化論</a><a href="過去問第１弾/chapter6.html">第６章　運営管理</a><a href="過去問第１弾/chapter7.html">第７章　理容技術理論</a></div></details>
+<details class="card"><summary><div class="title">過去問第２弾</div><div class="desc">開いて章を選択できます。</div></summary><div class="sub"><a class="home" href="過去問第２弾/index.html">章一覧を開く</a><a href="過去問第２弾/chapter1.html">第１章　関係法規</a><a href="過去問第２弾/chapter2.html">第２章　衛生管理</a><a href="過去問第２弾/chapter3.html">第３章　保健</a><a href="過去問第２弾/chapter4.html">第４章　香粧品化学</a><a href="過去問第２弾/chapter5.html">第５章　文化論</a><a href="過去問第２弾/chapter6.html">第６章　運営管理</a><a href="過去問第２弾/chapter7.html">第７章　理容技術理論</a></div></details>
 <a class="card" href="関連法規/index.html"><div class="title">関連法規</div><div class="desc">第１章　関係法規</div></a>
 <a class="card" href="衛生保健/index.html"><div class="title">衛生保健</div><div class="desc">衛生管理・保健</div></a>
 <a class="card" href="理論運営/index.html"><div class="title">理論運営</div><div class="desc">理論・運営</div></a>
